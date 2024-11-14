@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Volkswagen Microsite</title>
+    <!-- Bootstrap CDN -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <!-- React and ReactDOM CDN -->
+    <script src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+    <!-- Babel for JSX support -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <style>
+      body {
+        padding-top: 50px;
+      }
+      footer {
+        padding: 20px;
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      function App() {
+        return (
+          <div>
+            <Header />
+            <Welcome />
+            <About />
+            <History />
+            <Gallery />
+            <Resources />
+            <Footer />
+          </div>
+        );
+      }
+
+      function Header() {
+        return (
+          <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <a className="navbar-brand" href="#">Volkswagen Microsite</a>
+            <div className="collapse navbar-collapse">
+              <ul className="navbar-nav ml-auto">
+                <li className="nav-item"><a className="nav-link" href="#welcome">Home</a></li>
+                <li className="nav-item"><a className="nav-link" href="#about">About</a></li>
+                <li className="nav-item"><a className="nav-link" href="#history">History</a></li>
+                <li className="nav-item"><a className="nav-link" href="#gallery">Gallery</a></li>
+                <li className="nav-item"><a className="nav-link" href="#resources">Resources</a></li>
+              </ul>
+            </div>
+          </nav>
+        );
+      }
+
+      function Welcome() {
+        return (
+          <section id="welcome" className="container my-5">
+            <div className="row">
+              <div className="col-md-6">
+                <h1>Welcome to Volkswagen</h1>
+                <p>Discover the legacy of Volkswagen, a brand that has shaped automotive history with iconic cars like the Beetle and Golf. Explore our journey from humble beginnings to becoming a global leader in the automotive industry.</p>
+              </div>
+              <div className="col-md-6">
+                <img src="https://example.com/volkswagen-car.jpg" alt="Volkswagen Car" />
+              </div>
+            </div>
+          </section>
+        );
+      }
+
+      function About() {
+        return (
+          <section id="about" className="container my-5">
+            <h2>About Volkswagen</h2>
+            <div className="row">
+              <div className="col-md-4">
+                <img src="https://example.com/volkswagen-beetle.jpg" alt="Volkswagen Beetle" />
+              </div>
+              <div className="col-md-8">
+                <p>Volkswagen, founded in 1937, is known for its innovation and commitment to producing high-quality vehicles. The Beetle became a cultural icon, while the Golf set new standards in design and engineering.</p>
+                <p>Over the decades, Volkswagen has expanded its lineup, embracing electric vehicles and sustainable technologies to shape the future of mobility.</p>
+                <p>With a rich history and a forward-looking approach, Volkswagen continues to lead the way in the global automotive industry.</p>
+              </div>
+            </div>
+          </section>
+        );
+      }
+
+      function History() {
+        const events = [
+          { date: '1937', title: 'Volkswagen Founded', description: 'Volkswagen is founded in Germany.', image: 'https://example.com/1937.jpg' },
+          { date: '1938', title: 'Volkswagen Beetle', description: 'The iconic Beetle is launched.', image: 'https://example.com/1938.jpg' },
+          { date: '1974', title: 'Volkswagen Golf Introduced', description: 'The Golf sets new standards in engineering.', image: 'https://example.com/1974.jpg' },
+          // Add more events as needed...
+        ];
+
+        return (
+          <section id="history" className="container my-5">
+            <h2>History of Volkswagen</h2>
+            {events.map((event, index) => (
+              <div className="row my-4" key={index}>
+                <div className="col-md-4">
+                  <img src={event.image} alt={event.title} />
+                </div>
+                <div className="col-md-8">
+                  <h4>{event.date}: {event.title}</h4>
+                  <p>{event.description}</p>
+                </div>
+              </div>
+            ))}
+          </section>
+        );
+      }
+
+      function Gallery() {
+        const images = [
+          { src: 'https://example.com/image1.jpg', caption: 'Volkswagen Beetle' },
+          { src: 'https://example.com/image2.jpg', caption: 'Volkswagen Golf' },
+          // Add more images as needed...
+        ];
+
+        return (
+          <section id="gallery" className="container my-5">
+            <h2>Volkswagen Image Gallery</h2>
+            <div className="row">
+              {images.map((image, index) => (
+                <div className="col-md-4 my-3" key={index}>
+                  <img src={image.src} alt={image.caption} />
+                  <p>{image.caption}</p>
+                </div>
+              ))}
+            </div>
+          </section>
+        );
+      }
+
+      function Resources() {
+        const resources = [
+          { link: 'https://www.volkswagen.com', title: 'Official Volkswagen Website', description: 'Explore the latest models and news from Volkswagen.' },
+          { link: 'https://en.wikipedia.org/wiki/Volkswagen', title: 'Volkswagen on Wikipedia', description: 'Read about the history of Volkswagen on Wikipedia.' },
+          // Add more resources as needed...
+        ];
+
+        return (
+          <section id="resources" className="container my-5">
+            <h2>Resources</h2>
+            <div className="row">
+              {resources.map((resource, index) => (
+                <div className="col-md-6 my-3" key={index}>
+                  <h4><a href={resource.link} target="_blank">{resource.title}</a></h4>
+                  <p>{resource.description}</p>
+                </div>
+              ))}
+            </div>
+          </section>
+        );
+      }
+
+      function Footer() {
+        return (
+          <footer className="mt-5">
+            <p>&copy; 2024 Volkswagen Microsite. All Rights Reserved.</p>
+          </footer>
+        );
+      }
+
+      ReactDOM.render(<App />, document.getElementById('root'));
+    </script>
+  </body>
+</html>
