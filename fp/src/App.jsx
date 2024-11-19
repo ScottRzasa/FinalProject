@@ -6,7 +6,12 @@ import History from ".History.jsx";
 import Gallery from ".Gallery";
 import Resources from "./Resources";
 
+function App (){
 
+  return (
+    <></>
+  )
+}
 
 
 export default App
