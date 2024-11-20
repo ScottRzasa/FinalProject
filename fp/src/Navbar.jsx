@@ -5,17 +5,17 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function Navbar(){
 
     return(
-        <>
-            <h4>Volkswagen Microsite</h4>
-            <nav>
-                
-                <Link to="/">Home</Link> |
-                <Link to="/history">History</Link> |
-                <Link to="/gallery">Gallery</Link> |
-                <Link to="/resources">Resources</Link>
-
-            </nav>
-        </>
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div className="container-fluid">
+            <a className="navbar-brand" href="#">Volkswagen Microsite</a>
+                <nav>
+                    <Link to="/">Home</Link> |
+                    <Link to="/history">History</Link> |
+                    <Link to="/gallery">Gallery</Link> |
+                    <Link to="/resources">Resources</Link>
+                </nav>
+            </div>
+        </nav>
     )
 }
 
