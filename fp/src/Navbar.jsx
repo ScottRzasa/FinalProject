@@ -10,6 +10,7 @@ function Navbar(){
             <a className="navbar-brand " href="#">Volkswagen Microsite</a>
                 <nav className="mb-2 mb-lg-0">
                     <Link to="/">Home</Link> |
+                    <Link to="/about">About</Link> |
                     <Link to="/history">History</Link> |
                     <Link to="/gallery">Gallery</Link> |
                     <Link to="/resources">Resources</Link>
