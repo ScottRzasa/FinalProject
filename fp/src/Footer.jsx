@@ -5,7 +5,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function Footer(){
 
     return(
-        <></>
+        <footer className="container-fluid">
+            <p>&copy; 2024 Volkswagen Microsite. All rights reserved.</p>
+          </footer>
     )
 
 
