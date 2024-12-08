@@ -9,7 +9,6 @@ import Resources from "./Resources.jsx";
 import Navbar from "./Navbar.jsx";
 import Footer from "./Footer.jsx";
 import './App.css'
-import Navigation from "./Navbar.jsx";
 
 function App (){
 
@@ -24,8 +23,9 @@ function App (){
       <Route path="/gallery" element={<Gallery />} />
       <Route path="/resources" element={<Resources />} />
     </Routes>
-    <Footer></Footer>
+      <Footer></Footer>
     </Router>
+    
 
 
 

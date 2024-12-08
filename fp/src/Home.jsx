@@ -6,7 +6,7 @@ function Home(){
 
     return(
         <>
-        <section className="conatiner my-5" id="home">
+        <section className="conatiner m-5" id="home">
             <div className="row">
                 <div className="col-md-6">
                     <h1>Welcome to Volkswagen</h1>
