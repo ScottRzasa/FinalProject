@@ -15,11 +15,11 @@ function Navbar(){
             <div className="container-fluid collapse navbar-collapse">
             <a className="navbar-brand"></a>
                 <nav className="mb-2 mb-lg-0">
-                    <Link to="/" className="text-decoration-none link-secondary">Home</Link> |
-                    <Link to="/about" className="text-decoration-none link-secondary">About</Link> |
-                    <Link to="/history" className="text-decoration-none link-secondary">History</Link> |
-                    <Link to="/gallery" className="text-decoration-none link-secondary">Gallery</Link> |
-                    <Link to="/resources" className="text-decoration-none link-secondary">Resources</Link>
+                    <Link to="/" className="text-decoration-none link-secondary p-2">Home</Link>
+                    <Link to="/about" className="text-decoration-none link-secondary p-2">About</Link>
+                    <Link to="/history" className="text-decoration-none link-secondary p-2">History</Link>
+                    <Link to="/gallery" className="text-decoration-none link-secondary p-2">Gallery</Link>
+                    <Link to="/resources" className="text-decoration-none link-secondary p-2">Resources</Link>
                 </nav>
             </div>
         </nav>
