@@ -6,7 +6,7 @@ import About from "./About.jsx";
 import History from "./History.jsx";
 import Gallery from "./Gallery.jsx";
 import Resources from "./Resources.jsx";
-import Navbar from "./Navigation.jsx";
+import Navbar from "./Navbar.jsx";
 import Footer from "./Footer.jsx";
 import './App.css'
 import Navigation from "./Navbar.jsx";
@@ -16,7 +16,7 @@ function App (){
   return (
 
     <Router>
-      <Navigation></Navigation>
+      <Navbar></Navbar>
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
