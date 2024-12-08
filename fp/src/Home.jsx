@@ -10,7 +10,9 @@ function Home(){
             <div className="row">
                 <div className="col-md-6">
                     <h1>Welcome to Volkswagen</h1>
-                    <p>Discover the legacy of Volkswagen, a brand that has shaped automotive history with iconic cars like the Beetle, Golf, and their performance in motorsport events worldwide.</p>
+                    <p>Discover the legacy of Volkswagen, a brand that has shaped automotive history
+                        with iconic cars like the Beetle, Golf, and their performance in motorsport
+                        events worldwide.</p>
                 </div>
                 <div className="col-md-6">
                     <img src="Volkswagen images/DSC-0069.avif" alt="Volkswagen Rally Car" />
