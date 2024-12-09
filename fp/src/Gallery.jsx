@@ -7,7 +7,7 @@ function Gallery(){
         { src: 'Volkswagen images/1973_Volkswagen_Beetle,_Bangor,_ME_IMG_2532.JPG', caption: '1973 Volkswagen Beetle' },
         { src: 'Volkswagen images/70e65c9769410daa53b2ec6fcc50accf.jpg', caption: 'Volkswagen Scirocco GTR' },
         { src: 'Volkswagen images/2013-03-05_Geneva_Motor_Show_7961.JPG', caption: 'Volkswagen Polo R WRC' },
-        { src: 'Volkswagen images/Volkswagen-ID.7-2024.jpg', caption: 'Volkswagen ID.7' },
+        { src: 'Volkswagen images/volkswagen-id7-fahrbericht-peter-schwierz-2023-01-min-1400x933.jpg.webp', caption: 'Volkswagen ID.7' },
       ];
       
     return(
