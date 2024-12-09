@@ -1,6 +1,5 @@
 import React from "react";
 import { BrowserRouter as Router,Route,Routes, BrowserRouter } from "react-router-dom";
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from "./Home.jsx";
 import About from "./About.jsx";
 import History from "./History.jsx";
@@ -10,7 +9,7 @@ import Navbar from "./Navbar.jsx";
 import Footer from "./Footer.jsx";
 import './App.css'
 
-export default function App(){
+function App(){
 
   return (
       <Router>
@@ -29,5 +28,4 @@ export default function App(){
   )
 }
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<App />);
+export default App
