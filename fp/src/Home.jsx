@@ -4,8 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function Home(){
 
     return(
-        <>
-        <section className="conatiner my-5" id="home">
+        <section className="container my-5" id="home">
             <div className="row">
                 <div className="col-md-6">
                     <h1>Welcome to Volkswagen</h1>
@@ -19,8 +18,6 @@ function Home(){
                 </div>
             </div>
             </section>
-
-        </>
     )
 
 
