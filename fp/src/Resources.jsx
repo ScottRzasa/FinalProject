@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function Resources(){
 
     return(
-        <section id="resources" className="container-fluid my-5">
+        <section id="resources" className="container my-5">
             <h2>Resources</h2>
             <p>Explore these resources to learn more about Volkswagen and its legacy:</p>
             <ul>
