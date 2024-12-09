@@ -1,5 +1,4 @@
 import React from "react";
-import { BrowserRouter as Router,Route,Routes } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function History(){
@@ -14,7 +13,7 @@ function History(){
       ];
 
     return(
-        <section id="history" className="container m-5 align-content-center">
+        <section id="history" className="container my-5">
             <h2>History of Volkswagen</h2>
             {events.map((event, index) => (
               <div className="row my-4" key={index}>

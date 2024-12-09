@@ -1,11 +1,10 @@
 import React from "react";
-import { BrowserRouter as Router,Route,Routes } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-const Home = () => {
+function About(){
 
     return(
-        <section className="container m-5" id="about">
+        <section className="container my-5" id="about">
         <h2>About Volkswagen</h2>
             <div className="row">
                 <div className="col-md-5">
