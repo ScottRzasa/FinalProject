@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router,Route,Routes } from "react-router-dom";
+import { BrowserRouter as Router,Route,Routes, BrowserRouter } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from "./Home.jsx";
 import About from "./About.jsx";
@@ -10,27 +10,24 @@ import Navbar from "./Navbar.jsx";
 import Footer from "./Footer.jsx";
 import './App.css'
 
-function App (){
+export default function App(){
 
   return (
-
-    <Router>
-      <Navbar></Navbar>
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/history" element={<History />} />
-      <Route path="/gallery" element={<Gallery />} />
-      <Route path="/resources" element={<Resources />} />
-    </Routes>
-      <Footer></Footer>
-    </Router>
+      <Router>
+        <Navbar></Navbar>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/history" element={<History />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/resources" element={<Resources />} />
+      </Routes>
+        <Footer></Footer>
+      </Router>
     
-
-
 
   )
 }
 
-
-export default App
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);
