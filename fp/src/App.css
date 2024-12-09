@@ -19,7 +19,6 @@ section {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   position: relative;
   animation: glow-border 3s infinite;
-  padding-top: 2em;
 }
 
 footer {
