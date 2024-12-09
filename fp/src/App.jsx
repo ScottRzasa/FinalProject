@@ -12,6 +12,7 @@ import './App.css'
 function App(){
 
   return (
+    <div className="d-flex flex-column min-vh-100">
       <Router>
         <Navbar></Navbar>
       <Routes>
@@ -21,9 +22,9 @@ function App(){
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/resources" element={<Resources />} />
       </Routes>
-        <Footer></Footer>
       </Router>
-    
+        <Footer></Footer>
+    </div>
 
   )
 }
